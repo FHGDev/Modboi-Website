@@ -5,7 +5,19 @@
     <title>Home - Modboi Website</title>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script>
-      const page = new Vue({})
+      const page = new Vue({
+        el: "#page",
+        data: {
+          message: "Hello world."
+        }
+      })
     </script>
   </head>
+  <body>
+    <div id="page">
+      <p>
+        {{ message }}
+      </p>
+    </div>
+  </body>
 </html>
